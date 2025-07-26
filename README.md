@@ -1,7 +1,7 @@
 # CompileVerse ✨ - Compile, Analyze, and Optimize with AI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/React-18.x-blue.svg?logo=react)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-19.x-blue.svg?logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20.x-green.svg?logo=node.js)](https://nodejs.org/)
 [![Docker](https://img.shields.io/badge/Docker-blue.svg?logo=docker)](https://www.docker.com/)
 [![AWS](https://img.shields.io/badge/AWS-orange.svg?logo=amazon-aws)](https://aws.amazon.com/)
