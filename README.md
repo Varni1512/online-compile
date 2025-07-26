@@ -12,9 +12,9 @@ An advanced online code compiler that not only executes your code but also provi
 
 ## 🚀 Live Demo
 
-**[Link to your deployed CompileVerse frontend]**
+[**Live Demo**](https://online-compile.vercel.app/)
 
-*(Add a GIF or screenshot of CompileVerse in action here!)*
+![CompileVerse Demo](./Compiler.png)
 
 ![CompileVerse Demo GIF](https://your-link-to-a-demo-gif-or-screenshot.com/demo.gif)
 
@@ -54,18 +54,53 @@ To get a local copy up and running, follow these simple steps.
 * Docker
 * npm / yarn
 
-### Installation
+### Installation & Setup
 
-1.  **Clone the repo**
+1.  **Clone the Repository**
+    Open your terminal and run the following command:
     ```sh
-    git clone [https://github.com/your-username/compileverse.git](https://github.com/your-username/compileverse.git)
+    git clone https://github.com/Varni1512/online-compile.git
+    cd online-compile
     ```
-2.  **Set up Environment Variables** in the `/server` directory.
-3.  **(Option A) Run Locally with Node**
-    * Install dependencies and run the server and client in separate terminals.
-4.  **(Option B) Run Locally with Docker**
-    * Build the Docker image: `docker build -t compileverse-backend .` in the `/server` directory.
-    * Run the container: `docker run -p 8080:8080 compileverse-backend`
+    ***
+
+2.  **Set Up the Backend (Server)**
+    In your first terminal window, navigate to the backend folder and install its dependencies.
+    ```sh
+    cd backend
+    npm install
+    ```
+    Next, create an environment file to store your API key. In the `backend` directory, create a file named `.env`.
+    ```sh
+    touch .env
+    ```
+    Open the `.env` file and add your Google Gemini API key:
+    ```env
+    GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE"
+    ```
+    Now, start the backend server:
+    ```sh
+    npx nodemon index.js
+    ```
+    The server should now be running, typically on port 8080.
+
+    ***
+
+3.  **Set Up the Frontend (Client)**
+    **Open a new terminal window or tab.** Navigate to the frontend folder from the project's root directory (`online-compile`).
+    ```sh
+    cd frontend
+    npm install
+    ```
+    Once the installation is complete, start the frontend development server:
+    ```sh
+    npm run dev
+    ```
+
+    ***
+
+4.  **View the Application**
+    Your frontend will now be running and accessible in your web browser, usually at **http://localhost:5173**.
 
 ## 🤝 Contributing
 
@@ -79,6 +114,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Your Name - [@YourLinkedIn](https://www.linkedin.com/in/your-linkedin-profile/) - your.email@example.com
-
-Project Link: [https://github.com/your-username/compileverse](https://github.com/your-username/compileverse)
+LinkedIn - [LinkedIn](http://www.linkedin.com/in/varnikumarpatel)  
+Email - varni1505@gmail.com
